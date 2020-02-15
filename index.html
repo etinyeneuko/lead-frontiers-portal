@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Lead Frontier Job Application Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Load Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Load intl-tel-input -->
+    <link rel="stylesheet" href="styles/intlTelInput.min.css">
+    <script src="scripts/intlTelInput.min.js"></script>
+    <!-- Load Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <!-- Load Bootstrap 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <!-- Load Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Roboto+Condensed|Slabo+27px" rel="stylesheet" />
+    <!-- Load sweetalert.js -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Load Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Load Main Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <div class="container" style="max-width:90%;">
+        <div id="particles-js"></div>
+        <div class="row justify-content-start">
+            <div class="col top-margin">
+                <p class="text-center animated pulse infinite">
+                    <img id="logo" src="images/lfp-logo.png" height="100px"
+                        width="100px" />
+                </p>
+                <h1 style="font-size:300%;" class="boogaloo white text-center">
+                    Job Application
+                </h1>
+                <p class="text-center white slabo" style="font-size:200%;">
+                    FORM
+                </p>
+            </div>
+        </div>
+        <!-- Form Begins -->
+        <div class="row justify-content-center top-margin">
+            <form action="#" method="post" enctype="multipart/form-data" id="form" class="needs-validation bottom-margin" novalidate>
+                <div class="row">
+                    <div class="col-md form-group">
+                        <input type="text" class="form-control" id="firstName" name="firstName"
+                            placeholder="Your First Name" required />
+                        <div class="invalid-feedback">
+                            Please provide a Name.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md form-group">
+                        <input type="text" class="form-control" id="lastName" name="lastName"
+                            placeholder="Your Last Name" required />
+                        <div class="invalid-feedback">
+                            Please provide a Name.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md form-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
+                            required />
+                        <div class="invalid-feedback">
+                            Please provide a valid email address.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <small class="form-text text-muted">Kindly ensure that it is a current email.</small>
+                    </div>
+                    <div class="col-md form-group">
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number"
+                            required />
+                        <div class="invalid-feedback">
+                            Please provide a valid phone number.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md form-group">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" id="address" name="address" required />
+                        <div class="invalid-feedback">
+                            Please provide a valid address.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <legend class="col-form-label">Gender</legend>
+                        <div class="form-check form-check-inline form-group">
+                            <input type="radio" name="gender" id="Male" class="form-check-input" value="Male"
+                                required />
+                            <label for="Male" class="form-check-label">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline form-group">
+                            <input type="radio" name="gender" id="Female" class="form-check-input" value="Female" />
+                            <label for="Female" class="form-check-label">Female</label>
+                        </div>
+                    </div>
+                    <div class="col form-group">
+                        <label for="stateOfOrigin">State of Origin</label>
+                        <select class="custom-select" name="stateOfOrigin" id="stateOfOrigin" required>
+                            <option value="" selected="selected" disabled>- Select -</option>
+                            <option value="Abuja FCT">Abuja FCT</option>
+                            <option value="Abia">Abia</option>
+                            <option value="Adamawa">Adamawa</option>
+                            <option value="Akwa Ibom">Akwa Ibom</option>
+                            <option value="Anambra">Anambra</option>
+                            <option value="Bauchi">Bauchi</option>
+                            <option value="Bayelsa">Bayelsa</option>
+                            <option value="Benue">Benue</option>
+                            <option value="Borno">Borno</option>
+                            <option value="Cross River">Cross River</option>
+                            <option value="Delta">Delta</option>
+                            <option value="Ebonyi">Ebonyi</option>
+                            <option value="Edo">Edo</option>
+                            <option value="Ekiti">Ekiti</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="Gombe">Gombe</option>
+                            <option value="Imo">Imo</option>
+                            <option value="Jigawa">Jigawa</option>
+                            <option value="Kaduna">Kaduna</option>
+                            <option value="Kano">Kano</option>
+                            <option value="Katsina">Katsina</option>
+                            <option value="Kebbi">Kebbi</option>
+                            <option value="Kogi">Kogi</option>
+                            <option value="Kwara">Kwara</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Nassarawa">Nassarawa</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Ogun">Ogun</option>
+                            <option value="Ondo">Ondo</option>
+                            <option value="Osun">Osun</option>
+                            <option value="Oyo">Oyo</option>
+                            <option value="Plateau">Plateau</option>
+                            <option value="Rivers">Rivers</option>
+                            <option value="Sokoto">Sokoto</option>
+                            <option value="Taraba">Taraba</option>
+                            <option value="Yobe">Yobe</option>
+                            <option value="Zamfara">Zamfara</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please provide a membership id.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md form-group">
+                        <label for="position">Position applying for</label>
+                        <input type="text" class="form-control" id="position" name="position" required />
+                        <div class="invalid-feedback">
+                            Please provide the position you're applying for.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md form-group">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">CV Upload</span>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="cvUpload" name="cvUpload" accept=".pdf, application/pdf" required>
+                                <label class="custom-file-label" for="cvUpload">Choose file</label>
+                            </div>
+                        </div>
+                    <small class="form-text text-muted">CV must be in PDF format.</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md form-group">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Cover Letter Upload</span>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="coverLetterUpload" name="coverLetterUpload" accept=".pdf, application/pdf" required>
+                                <label class="custom-file-label" for="coverLetterUpload">Choose file</label>
+                            </div>
+                        </div>
+                        <small class="form-text text-muted">Cover Letter must be in PDF format.</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-center"><button type="submit" id="register" class="btn btn-danger"
+                                style="padding-left: 40px; padding-right:40px; margin-top:20px;">Submit</button></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row bottom-margin">
+            <div class="col">
+                <p class="text-center white">&copy; <span id="year"></span> Lead Frontier Partners</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Particles.js  -->
+    <script src="scripts/particles.js"></script>
+    <!-- Load Boostrap, Slip JQuery and Popper.js scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Load the main.js file -->
+    <script src="scripts/main.js" type="text/javascript"></script>
+</body>
+
+</html>
