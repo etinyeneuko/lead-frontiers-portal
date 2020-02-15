@@ -32,7 +32,7 @@ jobs:
         FTP_SERVER: ftp.mka.dqs.mybluehost.me
         FTP_USERNAME: mkadqsmy
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        LOCAL_DIR: build
+        LOCAL_DIR: .
         REMOTE_DIR: public_html/portal
 #         ARGS: --delete
         # --delete arg will delete files on the server if you've deleted them in git
