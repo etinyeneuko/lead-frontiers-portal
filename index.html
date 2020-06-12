@@ -173,15 +173,35 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col">
+                        <legend class="col-form-label">Are You Legally Able To Work In Nigeria?</legend>
+                        <div class="form-check form-check-inline form-group">
+                            <input type="radio" name="legalCheck" id="Yes" class="form-check-input" value="Yes"
+                                required />
+                            <label for="Yes" class="form-check-label">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline form-group">
+                            <input type="radio" name="legalCheck" id="No" class="form-check-input" value="No" />
+                            <label for="No" class="form-check-label">No</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <legend class="col-form-label">Have You Been Convicted Of Felony In The Past 5 Years?</legend>
+                        <div class="form-check form-check-inline form-group">
+                            <input type="radio" name="felony" id="Yes" class="form-check-input" value="Yes"
+                                required />
+                            <label for="Yes" class="form-check-label">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline form-group">
+                            <input type="radio" name="felony" id="No" class="form-check-input" value="No" />
+                            <label for="No" class="form-check-label">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-md form-group">
-                        <label for="position">Position applying for</label>
-                        <input type="text" class="form-control" id="position" name="position" required />
-                        <div class="invalid-feedback">
-                            Please provide the position you're applying for.
-                        </div>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
+                        <label for="address">Salary Required (N)</label>
+                        <input type="text" class="form-control" id="salary" name="salary" required />
                     </div>
                 </div>
                 <div class="row">
