@@ -116,10 +116,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
                 //@ts-ignore
                 if (data === "success") {
                     //@ts-ignore
-                    swal("Application Successful", "Your application was successful .", "success");
+                    swal("Application Successful, Please Proceed To Payment Page", "Your application was successful, Please Proceed To Payment Page .", "success, Please Proceed To Payment Page");
                     setTimeout(() => {
                         // @ts-ignore
-                        window.location = "https://leadfrontierpartners.com/";
+                        window.location = "https://paystack.com/pay/leadfrontierpartners";
                     }, 3000);
                 }
             })
